@@ -4685,7 +4685,7 @@ local WatermarkConnection = RunService.RenderStepped:Connect(function()
     local UptimeFormatted = string.format("%02d:%02d", math.floor(Uptime / 60), Uptime % 60)
     local GameName = getGameName(game.PlaceId)
 
-    Library:SetWatermark(("[ Mad.lol ] | $ Beta $ |  %s | %s (%d) | Uptime: %s | FPS %d | %d ms"):format(
+    Library:SetWatermark(("[ Void.lua ] | Beta Verison |  %s | %s (%d) | Uptime: %s | FPS %d | %d ms"):format(
         Executor, GameName, game.PlaceId, UptimeFormatted, math.floor(FPS), Ping
     ))
 end)
